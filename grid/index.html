@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Department Information App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Department Information App</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="ui-grid-c">
+                <div class="ui-block-a">
+                    <a href="#dept-page" data-role="button" data-department="Dept A">Department A</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#dept-page" data-role="button" data-department="Dept B">Department B</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#dept-page" data-role="button" data-department="Dept C">Department C</a>
+                </div>
+                <div class="ui-block-d">
+                    <a href="#dept-page" data-role="button" data-department="Dept D">Department D</a>
+                </div>
+                <div class="ui-block-e">
+                    <a href="#dept-page" data-role="button" data-department="Dept E">Department E</a>
+                </div>
+                <!-- Add more grid blocks here for additional departments -->
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="dept-page">
+        <div data-role="header">
+            <a href="#home" data-icon="home">Home</a>
+            <h1>Department Information</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <h2 id="dept-name"></h2>
+            <p id="dept-info"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

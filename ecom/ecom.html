@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-commerce App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>E-commerce App</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" id="item-list">
+                <li>
+                    <a href="#" class="add-to-cart" data-id="1" data-name="Item 1" data-price="10.00">
+                        <h2>Item 1</h2>
+                        <p>Price: $10.00</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="add-to-cart" data-id="2" data-name="Item 2" data-price="15.00">
+                        <h2>Item 2</h2>
+                        <p>Price: $15.00</p>
+                    </a>
+                </li>
+                <!-- Add more list items here -->
+            </ul>
+            <a href="#cart" data-role="button" data-icon="cart" data-iconpos="right" id="view-cart">View Cart</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="cart">
+        <div data-role="header">
+            <h1>Shopping Cart</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true" id="cart-items">
+                <!-- Selected items will be displayed here -->
+            </ul>
+            <a href="#home" data-role="button" data-icon="arrow-l" data-iconpos="left">Back</a>
+            <a href="#" data-role="button" data-icon="delete" data-iconpos="right" id="clear-cart">Clear Cart</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
